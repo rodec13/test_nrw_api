@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     if (response.statusCode == 200) {
       setState(() {
-        inspect(response);
+        inspect(response); //print(response.body) instead of directly calling inspect
         data = json.decode(response.body);
       });
     } else {
